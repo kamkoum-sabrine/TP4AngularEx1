@@ -1,0 +1,12 @@
+<div>
+    <h1>Descriptiton du telephone</h1>
+    <ul>
+        <li><img src="{{telephone.photo}}" height="100px" /></li>
+        <li>Marque: {{telephone.marque}}</li>
+        <li><input type="checkbox" [checked]="telephone.prix<700" readonly />
+            Bas de gamme</li>
+
+
+    </ul>
+    <button type="submit" (click)="details()">Details</button>
+</div>
